@@ -1,1 +1,14 @@
-*~
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# Jupyter Notebook
+.ipynb_checkpoints/*
+
+# My Configuration
+*~*
+.data/*
