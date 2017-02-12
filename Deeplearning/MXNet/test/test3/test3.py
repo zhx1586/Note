@@ -10,7 +10,15 @@ import net
 log.getLogger().setLevel(log.DEBUG)
 
 # Init Net
-mlp = net.multi_perceptron([128, 64, 10])
+# MLP       [128, 64, 10]  0.9676
+#            [50, 24, 10]  0.9655
+#            [48, 24, 10]  0.9604
+#            [60,  5, 10]  0.9586
+#            [48,  4, 10]  0.9554
+#           [200, 50, 10]  0.9707
+#          [500, 120, 10]  0.9743
+#         [1500, 120, 10]  0.9741
+mlp = net.multi_perceptron([1500, 120, 10])
 
 model = mx.model.FeedForward(
     ctx=mx.gpu(),

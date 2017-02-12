@@ -4,7 +4,6 @@
 import mxnet as mx
 
 
-# 0.9676
 def multi_perceptron(num_hidden):
     data = mx.sym.Variable('data')
     data = mx.sym.Flatten(data=data)
