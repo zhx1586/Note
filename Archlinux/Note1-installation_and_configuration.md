@@ -193,6 +193,26 @@
 
 - 3 Sublime Text 3
 
+	`sudo pacman -S sublime-text`
+
+	授权码
+
+	```
+	—– BEGIN LICENSE —–
+	MinBan
+	Single User License
+	EA7E-806395
+	318133A3 8F202A61 B0DBB8EB 21E17D2E
+	97D540E6 34079344 54620650 71E47589
+	9EF87857 345F5042 0D728DD1 8D8C979D
+	6A4F4DD2 67BB0345 746CA297 515BDA91
+	6CEAB381 4DB56700 D77DCD14 977BD326
+	1AC309ED 0EB414B8 4730DA10 99DBD291
+	FC88E0EF DCC7E3A9 56E4FFED 7629746B
+	E529AECA 92A96B60 72AE8928 8A240AAC
+	—— END LICENSE ——
+	```
+
 ## 6 安装Deepin桌面
 
 - 1 安装Deepin
@@ -203,7 +223,10 @@
 
     `sudo vim /etc/lightdm/lightdm.conf`
 
-    `[Seat:*] greeter-session=lightdm-deepin-greeter`
+    ```
+    [Seat:*] 
+    greeter-session=lightdm-deepin-greeter
+    ```
     
        
 
