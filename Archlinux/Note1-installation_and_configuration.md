@@ -59,11 +59,11 @@
 
 	`passwd root`
 
-	安装GRUB
+	安装GRUB(启动时需要使用UEFI方式启动安装U盘)
 
-	`pacman -S grub efimgr`
+	`pacman -S grub efibootmgr`
 
-	`grub-install --target=x86_64-efi --efi-directory=/boot/efi`
+	`grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck`
 
 	`grub-mkconfig -o /boot/grub/grub.cfg`
 
@@ -95,7 +95,7 @@
 
 	`SigLevel = Never`
 	
-	`Server = http://mirrors.163.com/archlinux-cn/$arch`
+	`Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch`
 
 - 4 安装yaourt
 	
@@ -121,7 +121,7 @@
 
 - 2 安装xorg
 
-	`sudo pacman -S xorg-server xorg-server-utils`
+	`sudo pacman -S xorg-server`
 
 - 3 安装gnome
 
@@ -193,7 +193,19 @@
 
 - 3 Sublime Text 3
 
+## 6 安装Deepin桌面
 
+- 1 安装Deepin
+
+    `sudo pacman -S deepin` 
+
+- 2 配置lightdm
+
+    `sudo vim /etc/lightdm/lightdm.conf`
+
+    `[Seat:*] greeter-session=lightdm-deepin-greeter`
+    
+       
 
 
 	
