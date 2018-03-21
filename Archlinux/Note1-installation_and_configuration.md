@@ -235,7 +235,13 @@
     sudo systemctl enable NetworkManager
     ```
 
-    ​
+## 7 问题解决
 
-
+ - 1 zsh箭头乱码
+    
+    ```
+    git clone https://github.com/powerline/fonts.git
+    cd fonts/
+    ./install.sh
+    ```
 
