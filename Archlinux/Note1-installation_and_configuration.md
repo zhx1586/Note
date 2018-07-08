@@ -129,7 +129,7 @@
 
   `sudo systemctl enable gdm NetworkManager`
 
-  - 4 配置中文输入
+- 4 配置中文输入
 
   `sudo pacman -S wqy-zenhei wqy-microhei`
 
