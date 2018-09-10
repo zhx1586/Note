@@ -69,8 +69,8 @@
           path.push_back(node);
         }
         // 3. child nodes
-        DFS(left);
-        DFS(right);
+        DFS(left, path, ...);
+        DFS(right, path, ...);
         // 4. clean the influence of the current node
         path.pop_back();
       }
